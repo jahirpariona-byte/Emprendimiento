@@ -1,12 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emprendimiento</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado de Abastos | Frescura de Nuestra Tierra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-</body>
-</html>
+
+  <!-- NAVEGACIÓN PRINCIPAL -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#inicio" class="logo">
+        <span class="logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+          </svg>
+        </span>
+        <div class="logo-text">
+          <span class="logo-title">Mercado de Abastos</span>
+          <span class="logo-sub">Calidad &amp; Tradición</span>
+        </div>
+      </a>
+
+      <!-- Menú Responsive 100% CSS -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#categorias" class="nav-link">Secciones</a></li>
+          <li><a href="#productos" class="nav-link">Productos</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="https://wa.me/51985111102?text=Hola%20Mercado%20de%20Abastos,%20quisiera%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta">
+          Pedir ahora
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge">Cosecha fresca todos los días</span>
+          <h1 class="hero-title">
+            Del campo a tu mesa, con el sabor <em>auténtico</em> de siempre.
+          </h1>
+          <p class="hero-description">
+            En <strong>Mercado de Abastos</strong> seleccionamos cada madrugada las mejores frutas, verduras, granos y abarrotes de primera calidad para llenar tu hogar de bienestar y frescura.
+          </p>
+          <div class="hero-actions">
+            <a href="#productos" class="btn btn-primary btn-lg">Explorar productos</a>
+            <a href="https://wa.me/51985111102?text=Hola,%20deseo%20consultar%20la%20lista%20de%20precios%20de%20hoy" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+              Cotizar por WhatsApp
+            </a>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric">
+              <strong>100%</strong>
+              <span>Productos frescos</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric">
+              <strong>+150</strong>
+              <span>Variedades diarias</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric">
+              <strong>Directo</strong>
+              <span>Sin intermediarios</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-main">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80" alt="Puesto colorido con frutas y verduras frescas en el Mercado de Abastos">
+          </div>
+          <div class="floating-card card-top">
+            <span class="floating-dot"></span>
+            <div>
+              <strong>Recién llegado</strong>
+              <p>Cosecha de temporada</p>
+            </div>
+          </div>
+          <div class="floating-card card-bottom">
+            <span class="floating-icon" aria-hidden="true">★</span>
+            <div>
+              <strong>Atención personalizada</strong>
+              <p>Armamos tu lista al instante</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CINTA INFORMATIVA ANIMADA (CSS PURO) -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>FRUTAS DE ESTACIÓN</span>
+        <span>•</span>
+        <span>VERDURAS ORGÁNICAS</span>
+        <span>•</span>
+        <span>ABARROTES SELECTOS</span>
+        <span>•</span>
+        <span>GRANOS ANDINOS</span>
+        <span>•</span>
+        <span>PRECIOS JUSTOS TODOS LOS DÍAS</span>
+        <span>•</span>
+        <span>FRUTAS DE ESTACIÓN</span>
+        <span>•</span>
+        <span>VERDURAS ORGÁNICAS</span>
+        <span>•</span>
+        <span>ABARROTES SELECTOS</span>
+        <span>•</span>
+        <span>GRANOS ANDINOS</span>
+        <span>•</span>
+        <span>PRECIOS JUSTOS TODOS LOS DÍAS</span>
+        <span>•</span>
+      </div>
+    </div>
+
+    <!-- SECCIONES DEL MERCADO -->
+    <section id="categorias" class="section categories-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Nuestros Pasillos</span>
+          <h2 class="section-title">Todo lo que tu despensa necesita</h2>
+          <p class="section-subtitle">Recorre nuestras secciones especializadas con productos escogidos uno a uno.</p>
+        </div>
+
+        <div class="categories-grid">
+          <article class="category-card">
+            <div class="category-img">
+              <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=600&q=80" alt="Frutas frescas variadas">
+            </div>
+            <div class="category-body">
+              <span class="category-tag">Huerta &amp; Valle</span>
+              <h3>Frutas Frescas</h3>
+              <p>Jugosas, dulces y en su punto exacto de maduración para tus desayunos y jugos.</p>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <div class="category-img">
+              <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=600&q=80" alt="Verduras y hortalizas verdes">
+            </div>
+            <div class="category-body">
+              <span class="category-tag">Campo Limpio</span>
+              <h3>Verduras y Hortalizas</h3>
+              <p>Hojas verdes crujientes, tubérculos seleccionados y hortalizas frescas del día.</p>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <div class="category-img">
+              <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80" alt="Granos, menestras y abarrotes">
+            </div>
+            <div class="category-body">
+              <span class="category-tag">Despensa Base</span>
+              <h3>Abarrotes y Granos</h3>
+              <p>Arroz, menestras, quinua, aceites y productos esenciales de las mejores marcas.</p>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <div class="category-img">
+              <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80" alt="Especias naturales y hierbas aromáticas">
+            </div>
+            <div class="category-body">
+              <span class="category-tag">Sabor Natural</span>
+              <h3>Especias y Hierbas</h3>
+              <p>Condimentos puros, ajíes, hierbas aromáticas y frutos secos al peso.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO CON FILTRO INTERACTIVO (CSS PURO) -->
+    <section id="productos" class="section products-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Selección Destacada</span>
+          <h2 class="section-title">Favoritos de la Semana</h2>
+          <p class="section-subtitle">Filtra por categoría y pide tus productos favoritos directamente por WhatsApp.</p>
+        </div>
+
+        <div class="catalog-wrapper">
+          <!-- Controles de filtro sin JavaScript -->
+          <input type="radio" name="category-filter" id="filter-all" class="filter-input" checked>
+          <input type="radio" name="category-filter" id="filter-frutas" class="filter-input">
+          <input type="radio" name="category-filter" id="filter-verduras" class="filter-input">
+          <input type="radio" name="category-filter" id="filter-abarrotes" class="filter-input">
+
+          <div class="filter-tabs" role="tablist" aria-label="Filtrar productos">
+            <label for="filter-all" class="filter-tab">Todos</label>
+            <label for="filter-frutas" class="filter-tab">Frutas</label>
+            <label for="filter-verduras" class="filter-tab">Verduras</label>
+            <label for="filter-abarrotes" class="filter-tab">Abarrotes</label>
+          </div>
+
+          <div class="products-grid">
+            <!-- Producto 1 -->
+            <article class="product-card" data-category="frutas">
+              <div class="product-badge">De Temporada</div>
+              <div class="product-img">
+                <img src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?auto=format&fit=crop&w=600&q=80" alt="Palta Hass cremosa">
+              </div>
+              <div class="product-info">
+                <span class="product-cat">Frutas</span>
+                <h3>Palta Hass Seleccionada</h3>
+                <p>Textura cremosa ideal para ensaladas y desayunos nutritivos.</p>
+                <div class="product-footer">
+                  <div class="product-price">S/ 8.50 <small>/ kg</small></div>
+                  <a href="https://wa.me/51985111102?text=Hola%20Mercado%20de%20Abastos,%20quiero%20pedir%20Palta%20Hass%20Seleccionada" target="_blank" rel="noopener noreferrer" class="btn-order">
+                    Pedir
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Producto 2 -->
+            <article class="product-card" data-category="verduras">
+              <div class="product-badge badge-green">Recién Cosechado</div>
+              <div class="product-img">
+                <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=600&q=80" alt="Tomates frescos rojos">
+              </div>
+              <div class="product-info">
+                <span class="product-cat">Verduras</span>
+                <h3>Tomate Italiano Firme</h3>
+                <p>Color intenso, pulpa carnosa y frescura garantizada del valle.</p>
+                <div class="product-footer">
+                  <div class="product-price">S/ 4.20 <small>/ kg</small></div>
+                  <a href="https://wa.me/51985111102?text=Hola%20Mercado%20de%20Abastos,%20quiero%20pedir%20Tomate%20Italiano%20Firme" target="_blank" rel="noopener noreferrer" class="btn-order">
+                    Pedir
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Producto 3 -->
+            <article class="product-card" data-category="abarrotes">
+              <div class="product-badge badge-gold">Calidad Extra</div>
+              <div class="product-img">
+                <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80" alt="Arroz extra graneado">
+              </div>
+              <div class="product-info">
+                <span class="product-cat">Abarrotes</span>
+                <h3>Arroz Extra Añejo</h3>
+                <p>Grano entero, blanco y rendidor para tus comidas familiares.</p>
+                <div class="product-footer">
+                  <div class="product-price">S/ 4.80 <small>/ kg</small></div>
+                  <a href="https://wa.me/51985111102?text=Hola%20Mercado%20de%20Abastos,%20quiero%20pedir%20Arroz%20Extra%20A%C3%B1ejo" target="_blank" rel="noopener noreferrer" class="btn-order">
+                    Pedir
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Producto 4 -->
+            <article class="product-card" data-category="frutas">
+              <div class="product-img">
+                <img src="https://images.unsplash.com/photo-1582979512210-99b6a53386f9?auto=format&fit=crop&w=600&q=80" alt="Naranjas de jugo frescas">
+              </div>
+              <div class="product-info">
+                <span class="product-cat">Frutas</span>
+                <h3>Naranja de Jugo</h3>
+                <p>Cosecha dulce con alto contenido de jugo y vitamina C.</p>
+                <div class="product-footer">
+                  <div class="product-price">S/ 3.50 <small>/ kg</small></div>
+                  <a href="https://wa.me/51985111102?text=Hola%20Mercado%20de%20Abastos,%20quiero%20pedir%20Naranja%20de%20Jugo" target="_blank" rel
